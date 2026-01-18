@@ -3,64 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login page</title>
-    <style>
-        body{
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: #1a1a1a;
-            margin:0;
-            padding:0;
-            height: 100vh;
-            display: flex ;
-            justify-content: center;
-            align-items: center;
-            
-        }
-        .card{
-            background-color: #2c2c2c;
-            border-radius:8PX ;
-            Padding:30px
-            width=300px;
-      }
-      h2{
-        color: #1a50a0;
-        text-align: center;
-        margin-bottom:20px ;
-      }
-      form{
-        display:flex;
-        flex-direction: column;
-      }
-      input{
-
-        margin-bottom: 15px;
-        padding: 10px;
-        border-radius: 5px;
-        border:1px solid black;
-        background-color: aliceblue;
-      }
-      button{
-        background-color:#1b81da;
-        color: #fff;
-        padding:10px;
-        border-radius: 8px;
-      }
-      button:hover{
-        background-color:#0741ac;
-      }
+    <title>Todo App</title>
+    <link rel="stylesheet" href="appp.css">
     
-        
-    </style>
 </head>
 <body>
-<div class="card">
-    <h2>Login</h2>
-    <form>
-        <input type="email" name=""id="" placeholder="email">
-        <input type="password" name="" id="" placeholder="password">
-        <button type="submit">login</button>
-    </form>
-</div>
-    
+    <div class="container">
+        
+        <header class="header">
+            <div class="header-content">
+                <div class="app-icon">📄</div>
+                <h1 class="app-title">Todo App</h1>
+            </div>
+        </header>
+
+
+        <main class="main-content">
+            <div class="content-wrapper">
+                
+                <div class="add-todo-section">
+                    <input type="text" class="todo-input" placeholder="Enter a new task...">
+                    <button class="add-btn">Add Todo</button>
+                </div>
+
+                
+                <div class="todos-section">
+                    <h2 class="todos-title">Your Todos</h2>
+                    
+                    <div class="todo-item">
+                        <span class="todo-text">To Learn Html, CSS and JavaScript</span>
+                        <div class="todo-actions">
+                            <button class="edit-btn">Edit</button>
+                            <button class="delete-btn">Delete</button>
+                        </div>
+                    </div>
+
+                    <div class="todo-item">
+                        <span class="todo-text">To Learn React, TailwindCSS, Node.js, Express and MongoDB</span>
+                        <div class="todo-actions">
+                            <button class="edit-btn">Edit</button>
+                            <button class="delete-btn">Delete</button>
+                        </div>
+                    </div>
+
+                    <div class="todo-item">
+                        <span class="todo-text">To Build a modern app with MERN stack</span>
+                        <div class="todo-actions">
+                            <button class="edit-btn">Edit</button>
+                            <button class="delete-btn">Delete</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="app.js"></script>
 </body>
 </html>
